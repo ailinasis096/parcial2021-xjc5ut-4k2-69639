@@ -1,12 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-
-import { Articulo } from '../../models/articulo';
-import { ArticuloFamilia } from '../../models/articulo-familia';
-import { MockArticulosService } from '../../services/mock-articulos.service';
-import { MockArticulosFamiliasService } from '../../services/mock-articulos-familias.service';
-import { ArticulosFamiliasService } from '../../services/articulos-familias.service';
-import { ArticulosService } from '../../services/articulos.service';
 import { ModalDialogService } from '../../services/modal-dialog.service';
 import { Productos } from '../../models/productos';
 import { ProductosService } from '../../services/productos.service';
@@ -17,7 +10,7 @@ import { ProductosService } from '../../services/productos.service';
   styleUrls: ['./productos.component.css']
 })
 export class ProductosComponent implements OnInit {
-  Titulo = 'Articulos';
+  Titulo = 'Productos';
   TituloAccionABMC = {
     A: '(Agregar)',
     B: '(Eliminar)',
